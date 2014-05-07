@@ -1,0 +1,17 @@
+<h4>Login As jawbone Up</h4>
+<input type="email" placeholder="Email id for jawbone up" name="email" id="email"/>
+<input type="password" placeholder="password" name="password" id="password">
+<button  id="login">Login</button>
+
+<script type="text/javascript">
+//$(document).ready( function(){
+  //$("#donationGif").hide();  
+  //$("#paymentErrors").hide();
+//});
+$("#login").click( function(){
+
+  $.ajax({ type: 'post', url: '/welcome/login', data: ({'email' : $("#email").val(),'password' : $("#password").val()}), success: function() { } });
+  
+});
+
+</script>

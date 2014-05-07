@@ -1,0 +1,9 @@
+<h1>Welcome Shahid</h1>
+<% if current_user %><%= @users.inspect %>
+  Signed in as <%= current_user.first_name %><br>
+  <%= link_to "Sign out", signout_path %>
+<% else %>
+  <%= link_to "Sign in with Jawbone", "/auth/jawbone", :class => "btn btn-primary jawbone" %>
+  <a href="/welcome/login">Go Shahid</a>
+<% end %><br>
+<a href="/welcome/show">Show Data</a>
