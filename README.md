@@ -98,5 +98,6 @@ def change<br />
 ====
 <pre><code>show.html.erb<br />
 %= @client.user %<br>
+%= @client.workouts %
 </code></pre>
 ====
