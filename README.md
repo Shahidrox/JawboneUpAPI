@@ -93,7 +93,7 @@ def change<br />
 % else %
   %= link_to "Sign in with Jawbone", "/auth/jawbone", :class => "btn btn-primary jawbone" %
 % end %<br>
-<a href="/welcome/show">Show Data</a>
+a href="/welcome/show">Show Data /a
 </code></pre>
 ====
 <pre><code>show.html.erb<br />
