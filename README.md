@@ -87,16 +87,16 @@ def change<br />
 </code></pre>
 ====
 <pre><code>application.html.erb<br />
-<% if current_user %><%= @users.inspect %>
-  Signed in as <%= current_user.first_name %><br>
-  <%= link_to "Sign out", signout_path %>
-<% else %>
-  <%= link_to "Sign in with Jawbone", "/auth/jawbone", :class => "btn btn-primary jawbone" %>
-<% end %><br>
+% if current_user % %= @users.inspect %
+  Signed in as %= current_user.first_name %<br>
+  %= link_to "Sign out", signout_path %
+% else %
+  %= link_to "Sign in with Jawbone", "/auth/jawbone", :class => "btn btn-primary jawbone" %
+% end %<br>
 <a href="/welcome/show">Show Data</a>
 </code></pre>
 ====
 <pre><code>show.html.erb<br />
-<%= @client.user %><br>
+%= @client.user %<br>
 </code></pre>
 ====
