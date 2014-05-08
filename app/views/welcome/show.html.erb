@@ -1,3 +1,14 @@
 <%if current_user %>
-<%= @client.workouts %><br>
+<div class="alert alert-info"><strong>workouts =</strong> <%= @client.workouts%></div>
+<%#= @client.workouts["data"]%>
+<%#= @client.workouts["data"]["items"]%>
+<%#= @client.workouts["data"]["items"].first%>
+<%#= @client.workouts["data"]["items"].first["details"]%>
+<%#= @client.workouts["data"]["items"].first["xid"]%>
+<div class="alert alert-warning"><strong>xid =</strong> <%= @client.workouts["data"]["items"].first["xid"]%></div>
+<div class="alert alert-info"><strong>time_completed =</strong> <%= @client.workouts["data"]["items"].first["time_completed"]%></div>
+<div class="alert alert-warning"><strong>goal =</strong> <%= @client.workouts["data"]["items"].first["details"]["goal"]%></div>
+<div class="alert alert-info"><strong>steps =</strong> <%= @client.workouts["data"]["items"].first["details"]["steps"]%></div>
+<div class="alert alert-warning"><strong>km =</strong> <%= @client.workouts["data"]["items"].first["details"]["km"]%></div>
+
 <%end%>
